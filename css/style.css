@@ -1,0 +1,174 @@
+/*Gerais*/
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+}
+
+input,label{
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+/*Para tirar os focos na bordar usar "focus"*/
+input:focus, label:focus{
+    outline: none;
+}
+
+a{
+    color: #3558FA;
+    text-decoration: none;
+}
+
+body{
+    padding-top: 5vh;
+    background-image: url(../img/kuala-lumpur-1820944.jpg);
+    background-size: cover;/*Utilizado para posicionar a medida da tela*/
+}
+
+
+/*form*/
+#main-container{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 8%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color: #3558FA;
+}
+
+input[type="submit"]{
+    background-color: #3558FA;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#box{
+    margin-right: 5px;
+}
+
+#box, #box-label{
+display: inline-block;
+width: auto;
+}
+
+/*validações*/
+.error-validation{
+    color: red;
+    position: absolute;
+    top: 45px;
+    font-size: .7rem;
+}
+
+.template{
+    display: none;
+}
+
+/*Responsividade para 320px*/
+@media(max-width:320px){
+    body{
+        background-size: cover;
+        height: 90vh;
+  
+}
+    #main-container{
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .spacing{
+        margin-right: 10.0%;
+    }
+}
+
+/*Responsividade para 375px*/
+@media(max-width:375px){
+    body{
+        background-size: 280vh;
+    }
+
+    #main-container{
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/*Responsividade para 425px*/
+@media(max-width:425px){
+    body{
+        background-size: auto;
+    }
+
+    #main-container{
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+/*Responsividade para 768px*/
+@media(max-width:768px){
+    body{
+        background-size: auto;
+    }
+}
+
+/*Resposividade para 1024px*/
+@media(max-width:1024px){
+    body{
+        background-size: auto;
+    }
+}
